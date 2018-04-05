@@ -38,6 +38,11 @@ class User(AbstractUser):
         null=True,
     )
 
+    race_ethnicity = models.ManyToManyField(
+        'RaceEthnicity',
+        blank=True,
+    )
+
     date_of_birth = models.DateField(
         null=True,
         blank=True,
@@ -67,6 +72,24 @@ class User(AbstractUser):
             (date.month, date.day) < (self.date_of_birth.month, self.date_of_birth.day)
         )
     age.short_description = 'Age'
+
+
+class RaceEthnicity(models.Model):
+    """Model definition for RaceEthnicity."""
+
+    race_ethnicity = models.CharField(
+        max_length=255
+    )
+
+    class Meta:
+        """Meta definition for RaceEthnicity."""
+
+        verbose_name = 'Race/Ethnicity'
+        verbose_name_plural = 'Race/Ethnicities'
+
+    def __str__(self):
+        """Unicode representation of RaceEthnicity."""
+        return self.race_ethnicity
 
 
 class Gender(models.Model):

@@ -6,7 +6,7 @@ import os
 def release(ctx):
     collect_static(ctx)
     migrate(ctx)
-    load_dev_fixtures(ctx)
+    load_fixtures(ctx)
 
 
 @task(help={"port": "Port to use when serving traffic. Defaults to $PORT."})
@@ -20,10 +20,11 @@ def migrate(ctx):
 
 
 @task
-def load_dev_fixtures(ctx):
-    if os.environ.get("ENABLE_FIXTURES", "true") == "true":
-        # Order matters
-        ctx.run("python manage.py loaddata 01-default")
+def load_fixtures(ctx):
+    ctx.run("python manage.py loaddata 01-defaults")
+
+    if os.environ.get("ENABLE_DEV_FIXTURES", "false") == "true":
+        ctx.run("python manage.py loaddata 02-development")
 
 
 @task

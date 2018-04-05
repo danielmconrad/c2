@@ -8,6 +8,7 @@ from django.utils.translation import (
 )
 from .models import (
     User,
+    RaceEthnicity,
     Gender,
 )
 
@@ -85,6 +86,19 @@ class UserAdmin(BaseUserAdmin):
                 )
             }
         ),
+    )
+
+
+@admin.register(RaceEthnicity)
+class RaceEthnicityAdmin(admin.ModelAdmin):
+    '''Admin View for RaceEthnicity'''
+
+    list_display = (
+        'id',
+        'race_ethnicity',
+    )
+    search_fields = (
+        'race_ethnicity',
     )
 
 
