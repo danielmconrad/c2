@@ -1,54 +1,5 @@
 [
   {
-    "model": "account.raceethnicity",
-    "pk": 1,
-    "fields": {
-      "race_ethnicity": "Asian"
-    }
-  },
-  {
-    "model": "account.raceethnicity",
-    "pk": 2,
-    "fields": {
-      "race_ethnicity": "Black/African American"
-    }
-  },
-  {
-    "model": "account.raceethnicity",
-    "pk": 3,
-    "fields": {
-      "race_ethnicity": "Hispanic/Latino"
-    }
-  },
-  {
-    "model": "account.raceethnicity",
-    "pk": 4,
-    "fields": {
-      "race_ethnicity": "Middle Eastern"
-    }
-  },
-  {
-    "model": "account.raceethnicity",
-    "pk": 5,
-    "fields": {
-      "race_ethnicity": "Native American/Alaska Native"
-    }
-  },
-  {
-    "model": "account.raceethnicity",
-    "pk": 6,
-    "fields": {
-      "race_ethnicity": "Native Hawaiian/Other Pacific Islander"
-    }
-  },
-  {
-    "model": "account.raceethnicity",
-    "pk": 7,
-    "fields": {
-      "race_ethnicity": "White/European"
-    }
-  },
-  {
     "model": "account.gender",
     "pk": 1,
     "fields": {

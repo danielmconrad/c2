@@ -38,8 +38,8 @@ class User(AbstractUser):
         null=True,
     )
 
-    race_ethnicity = models.ManyToManyField(
-        'RaceEthnicity',
+    races = models.ManyToManyField(
+        'Race',
         blank=True,
     )
 
@@ -48,7 +48,7 @@ class User(AbstractUser):
         blank=True,
     )
 
-    address = models.ManyToManyField(
+    addresses = models.ManyToManyField(
         Location,
         limit_choices_to=(
             Q(location_type=Location.HOME) | Q(location_type=Location.WORK)
@@ -74,22 +74,43 @@ class User(AbstractUser):
     age.short_description = 'Age'
 
 
-class RaceEthnicity(models.Model):
-    """Model definition for RaceEthnicity."""
+class Race(models.Model):
+    """Model definition for Race."""
 
-    race_ethnicity = models.CharField(
+    race = models.CharField(
         max_length=255
     )
 
     class Meta:
         """Meta definition for RaceEthnicity."""
-
-        verbose_name = 'Race/Ethnicity'
-        verbose_name_plural = 'Race/Ethnicities'
+        verbose_name = 'Race'
+        verbose_name_plural = 'Races'
 
     def __str__(self):
-        """Unicode representation of RaceEthnicity."""
-        return self.race_ethnicity
+        """Unicode representation of Race."""
+        return self.race
+
+
+class Ethnicity(models.Model):
+    """Model definition for Ethnicity."""
+
+    ethnicity = models.CharField(
+        max_length=255
+    )
+
+    race = models.ForeignKey(
+        Race,
+        on_delete=models.CASCADE
+    )
+
+    class Meta:
+        """Meta definition for Ethnicity."""
+        verbose_name = 'Ethnicity'
+        verbose_name_plural = 'Ethnicities'
+
+    def __str__(self):
+        """Unicode representation of Ethnicity."""
+        return self.ethnicity
 
 
 class Gender(models.Model):
@@ -116,7 +137,6 @@ class Gender(models.Model):
 
     class Meta:
         """Meta definition for Gender."""
-
         verbose_name = 'Gender'
         verbose_name_plural = 'Genders'
 
