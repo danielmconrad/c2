@@ -1,17 +1,39 @@
+from django import forms
 from django.contrib import admin
 from django.contrib.auth.admin import (
     UserAdmin as BaseUserAdmin
 )
+from django.forms import formset_factory
 from django.utils.translation import (
     gettext,
     gettext_lazy as _,
 )
 from .models import (
     User,
+    Gender,
     Race,
     Ethnicity,
-    Gender,
+    UserRace,
 )
+
+
+#
+# =================================================
+#
+# class UserRaceForm(forms.Form):
+#     pass
+#     # area_skill           = fields.CharField(max_length=50, help_text = 'Example: Testing,Development,etc..')
+#     # experience           = fields.CharField(max_length=50)
+#
+# UserRaceFormset = formset_factory(UserRaceForm, extra=0)
+
+class UserRaceInline(admin.TabularInline):
+    model = UserRace
+    # formset = UserRaceFormset
+
+#
+# =================================================
+#
 
 
 @admin.register(User)
@@ -31,6 +53,10 @@ class UserAdmin(BaseUserAdmin):
         'date_joined',
     )
 
+    inlines = [
+        UserRaceInline,
+    ]
+
     fieldsets = (
         (
             _('Personal info'),
@@ -44,7 +70,7 @@ class UserAdmin(BaseUserAdmin):
                     'email',
                     'gender',
                     'date_of_birth',
-                    'address',
+                    'locations',
                 )
             }
         ),
@@ -90,6 +116,21 @@ class UserAdmin(BaseUserAdmin):
     )
 
 
+@admin.register(Gender)
+class GenderAdmin(admin.ModelAdmin):
+    '''Admin View for Gender'''
+
+    list_display = (
+        'id',
+        'gender',
+        'referred_to_as',
+    )
+    search_fields = (
+        'gender',
+        'referred_to_as',
+    )
+
+
 @admin.register(Race)
 class RaceAdmin(admin.ModelAdmin):
     '''Admin View for Race'''
@@ -112,22 +153,8 @@ class EthnicityAdmin(admin.ModelAdmin):
         'race',
         'ethnicity',
     )
+
     search_fields = (
         'race',
         'ethnicity',
-    )
-
-
-@admin.register(Gender)
-class GenderAdmin(admin.ModelAdmin):
-    '''Admin View for Gender'''
-
-    list_display = (
-        'id',
-        'gender',
-        'referred_to_as',
-    )
-    search_fields = (
-        'gender',
-        'referred_to_as',
     )

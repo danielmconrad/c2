@@ -10,7 +10,7 @@ class Location(models.Model):
     CLASS = 'C'
     HOME = 'H'
     WORK = 'W'
-    LOCATION_TYPE_CHOICES = (
+    TYPE_CHOICES = (
         (SCHOOL, 'School'),
         (CLASS, 'Class'),
         (HOME, 'Home'),
@@ -21,9 +21,9 @@ class Location(models.Model):
         on_delete=models.CASCADE,
     )
 
-    location_type = models.CharField(
+    type = models.CharField(
         db_column="type",
-        choices=LOCATION_TYPE_CHOICES,
+        choices=TYPE_CHOICES,
         default=HOME,
         max_length=1,
     )
@@ -36,5 +36,5 @@ class Location(models.Model):
 
     def __str__(self):
         """Unicode representation of Location."""
-        location_type = dict(self.LOCATION_TYPE_CHOICES).get(self.location_type)
-        return f'({location_type}) {self.address}'
+        type = dict(self.TYPE_CHOICES).get(self.type)
+        return f'({type}) {self.address}'

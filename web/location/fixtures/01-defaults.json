@@ -65,7 +65,7 @@
   "pk": 1,
   "fields": {
     "address": 1,
-    "location_type": "H"
+    "type": "H"
   }
 },
 {
@@ -73,7 +73,7 @@
   "pk": 2,
   "fields": {
     "address": 2,
-    "location_type": "W"
+    "type": "W"
   }
 }
 ]

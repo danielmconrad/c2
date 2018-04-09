@@ -41,6 +41,7 @@ class User(AbstractUser):
     races = models.ManyToManyField(
         'Race',
         blank=True,
+        through='UserRace',
     )
 
     date_of_birth = models.DateField(
@@ -48,12 +49,10 @@ class User(AbstractUser):
         blank=True,
     )
 
-    addresses = models.ManyToManyField(
+    locations = models.ManyToManyField(
         Location,
-        limit_choices_to=(
-            Q(location_type=Location.HOME) | Q(location_type=Location.WORK)
-        ),
         blank=True,
+        limit_choices_to=(Q(type=Location.HOME) | Q(type=Location.WORK)),
     )
 
     USERNAME_FIELD = 'email'
@@ -72,45 +71,6 @@ class User(AbstractUser):
             (date.month, date.day) < (self.date_of_birth.month, self.date_of_birth.day)
         )
     age.short_description = 'Age'
-
-
-class Race(models.Model):
-    """Model definition for Race."""
-
-    race = models.CharField(
-        max_length=255
-    )
-
-    class Meta:
-        """Meta definition for RaceEthnicity."""
-        verbose_name = 'Race'
-        verbose_name_plural = 'Races'
-
-    def __str__(self):
-        """Unicode representation of Race."""
-        return self.race
-
-
-class Ethnicity(models.Model):
-    """Model definition for Ethnicity."""
-
-    ethnicity = models.CharField(
-        max_length=255
-    )
-
-    race = models.ForeignKey(
-        Race,
-        on_delete=models.CASCADE
-    )
-
-    class Meta:
-        """Meta definition for Ethnicity."""
-        verbose_name = 'Ethnicity'
-        verbose_name_plural = 'Ethnicities'
-
-    def __str__(self):
-        """Unicode representation of Ethnicity."""
-        return self.ethnicity
 
 
 class Gender(models.Model):
@@ -143,3 +103,78 @@ class Gender(models.Model):
     def __str__(self):
         """Unicode representation of Gender."""
         return self.gender
+
+
+class Race(models.Model):
+    """Model definition for Race."""
+
+    race = models.CharField(
+        max_length=255
+    )
+
+    class Meta:
+        """Meta definition for Race."""
+        verbose_name = 'Race'
+        verbose_name_plural = 'Races'
+
+    def __str__(self):
+        """Unicode representation of Race."""
+        return self.race
+
+
+class Ethnicity(models.Model):
+    """Model definition for Ethnicity."""
+
+    ethnicity = models.CharField(
+        max_length=255
+    )
+
+    race = models.ForeignKey(
+        Race,
+        on_delete=models.CASCADE
+    )
+
+    class Meta:
+        """Meta definition for Ethnicity."""
+        verbose_name = 'Ethnicity'
+        verbose_name_plural = 'Ethnicities'
+
+    def __str__(self):
+        """Unicode representation of Ethnicity."""
+        return self.ethnicity
+
+
+class UserRace(models.Model):
+    """Model definition for UserRace."""
+
+    user = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE
+    )
+
+    race = models.ForeignKey(
+        Race,
+        on_delete=models.CASCADE
+    )
+
+    ethnicities = models.ForeignKey(
+        Ethnicity,
+        on_delete=models.CASCADE,
+        # limit_choices_to = limit_ethnicities_choices,
+    )
+
+    other_ethnicities = models.CharField(
+        max_length=255
+    )
+
+    # def limit_ethnicities_choices():
+    #     return {'pub_date__lte': datetime.date.utcnow()}
+
+    class Meta:
+        """Meta definition for UserRace."""
+        verbose_name = 'UserRace'
+        verbose_name_plural = 'UserRaces'
+
+    def __str__(self):
+        """Unicode representation of UserRace."""
+        return "FIXME"
