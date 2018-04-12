@@ -3,7 +3,6 @@ from django.contrib import admin
 from django.contrib.auth.admin import (
     UserAdmin as BaseUserAdmin
 )
-from django.forms import formset_factory
 from django.utils.translation import (
     gettext,
     gettext_lazy as _,
@@ -17,25 +16,19 @@ from .models import (
 )
 
 
-#
-# =================================================
-#
-# class UserRaceForm(forms.Form):
-#     pass
-#     # area_skill           = fields.CharField(max_length=50, help_text = 'Example: Testing,Development,etc..')
-#     # experience           = fields.CharField(max_length=50)
-#
-# UserRaceFormset = formset_factory(UserRaceForm, extra=0)
+class UserRaceEthnicityForm(forms.ModelForm):
+    class Meta:
+        model = UserRaceEthnicity
+        exclude = ['user']
 
-# StackedInline
-# TabularInline
-class UserRaceEthnicityInline(admin.InlineModelAdmin):
+    class Media:
+        js = ("user_race_ethnicities_admin.js",)
+
+
+class UserRaceEthnicityInline(admin.TabularInline):
+    classes = ("user-race-ethnicity-inline",)
     model = UserRaceEthnicity
-    # formset = UserRaceFormset
-
-#
-# =================================================
-#
+    form = UserRaceEthnicityForm
 
 
 @admin.register(User)

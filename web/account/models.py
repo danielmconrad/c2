@@ -48,12 +48,6 @@ class User(AbstractUser):
         null=True,
     )
 
-    race_ethnicities = models.ManyToManyField(
-        'Race',
-        blank=True,
-        through='UserRace',
-    )
-
     date_of_birth = models.DateField(
         null=True,
         blank=True,
@@ -151,7 +145,7 @@ class Ethnicity(models.Model):
 
     def __str__(self):
         """Unicode representation of Ethnicity."""
-        return self.ethnicity
+        return f"{self.race}: {self.ethnicity}"
 
 
 class UserRaceEthnicity(models.Model):
@@ -159,32 +153,34 @@ class UserRaceEthnicity(models.Model):
 
     user = models.ForeignKey(
         User,
-        on_delete=models.DO_NOTHING
+        on_delete=models.CASCADE
     )
 
     race = models.ForeignKey(
-        Ethnicity,
-        on_delete=models.DO_NOTHING
-    )
-
-    other_race = models.CharField(
-        max_length=255
+        Race,
+        blank=True,
+        null=True,
+        on_delete=models.CASCADE
     )
 
     ethnicity = models.ForeignKey(
         Ethnicity,
-        on_delete=models.DO_NOTHING
+        blank=True,
+        null=True,
+        on_delete=models.CASCADE
     )
 
-    other_ethnicity = models.CharField(
+    other = models.CharField(
+        blank=True,
+        null=True,
         max_length=255
     )
 
     class Meta:
-        """Meta definition for UserRace."""
-        verbose_name = 'UserRace'
-        verbose_name_plural = 'UserRaces'
+        """Meta definition for UserRaceEthnicity."""
+        verbose_name = 'UserRaceEthnicity'
+        verbose_name_plural = 'UserRaceEthnicities'
 
     def __str__(self):
-        """Unicode representation of UserRace."""
-        return "FIXME"
+        """Unicode representation of UserRaceEthnicity."""
+        return f"{self.race} {self.ethnicity} {self.other}"
