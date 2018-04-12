@@ -13,7 +13,7 @@ from .models import (
     Gender,
     Race,
     Ethnicity,
-    UserRace,
+    UserRaceEthnicity,
 )
 
 
@@ -27,8 +27,10 @@ from .models import (
 #
 # UserRaceFormset = formset_factory(UserRaceForm, extra=0)
 
-class UserRaceInline(admin.TabularInline):
-    model = UserRace
+# StackedInline
+# TabularInline
+class UserRaceEthnicityInline(admin.InlineModelAdmin):
+    model = UserRaceEthnicity
     # formset = UserRaceFormset
 
 #
@@ -54,7 +56,7 @@ class UserAdmin(BaseUserAdmin):
     )
 
     inlines = [
-        UserRaceInline,
+        UserRaceEthnicityInline,
     ]
 
     fieldsets = (

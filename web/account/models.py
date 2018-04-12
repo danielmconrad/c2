@@ -11,10 +11,20 @@ from location.models import Location
 
 class UserManager(DefaultUserManager):
     def create_user(self, email=None, password=None, **extra_fields):
-        super().create_user(username=uuid.uuid4(), email=email, password=password, **extra_fields)
+        super().create_user(
+            username=uuid.uuid4(),
+            email=email,
+            password=password,
+            **extra_fields
+        )
 
     def create_superuser(self, email, password, **extra_fields):
-        super().create_superuser(username=uuid.uuid4(), email=email, password=password, **extra_fields)
+        super().create_superuser(
+            username=uuid.uuid4(),
+            email=email,
+            password=password,
+            **extra_fields
+        )
 
 
 class User(AbstractUser):
@@ -38,7 +48,7 @@ class User(AbstractUser):
         null=True,
     )
 
-    races = models.ManyToManyField(
+    race_ethnicities = models.ManyToManyField(
         'Race',
         blank=True,
         through='UserRace',
@@ -144,31 +154,31 @@ class Ethnicity(models.Model):
         return self.ethnicity
 
 
-class UserRace(models.Model):
-    """Model definition for UserRace."""
+class UserRaceEthnicity(models.Model):
+    """Model definition for UserRaceEthnicity."""
 
     user = models.ForeignKey(
         User,
-        on_delete=models.CASCADE
+        on_delete=models.DO_NOTHING
     )
 
     race = models.ForeignKey(
-        Race,
-        on_delete=models.CASCADE
-    )
-
-    ethnicities = models.ForeignKey(
         Ethnicity,
-        on_delete=models.CASCADE,
-        # limit_choices_to = limit_ethnicities_choices,
+        on_delete=models.DO_NOTHING
     )
 
-    other_ethnicities = models.CharField(
+    other_race = models.CharField(
         max_length=255
     )
 
-    # def limit_ethnicities_choices():
-    #     return {'pub_date__lte': datetime.date.utcnow()}
+    ethnicity = models.ForeignKey(
+        Ethnicity,
+        on_delete=models.DO_NOTHING
+    )
+
+    other_ethnicity = models.CharField(
+        max_length=255
+    )
 
     class Meta:
         """Meta definition for UserRace."""
