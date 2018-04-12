@@ -16,7 +16,7 @@ var inputsSelector = 'select';
   // Make sure any dynamically added rows behave the same way
   $(document).on('formset:added', function(event, $row, formsetName) {
     if (formsetName == 'userraceethnicity_set') {
-      defineRowBehavior($row)
+      defineRowBehavior($row);
     }
   });
 
