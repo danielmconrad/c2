@@ -113,7 +113,7 @@ class UserAdmin(BaseUserAdmin):
 
 @admin.register(Gender)
 class GenderAdmin(admin.ModelAdmin):
-    '''Admin View for Gender'''
+    """Admin View for Gender"""
 
     list_display = (
         'id',
@@ -128,7 +128,7 @@ class GenderAdmin(admin.ModelAdmin):
 
 @admin.register(Race)
 class RaceAdmin(admin.ModelAdmin):
-    '''Admin View for Race'''
+    """Admin View for Race"""
 
     list_display = (
         'id',
@@ -141,7 +141,7 @@ class RaceAdmin(admin.ModelAdmin):
 
 @admin.register(Ethnicity)
 class EthnicityAdmin(admin.ModelAdmin):
-    '''Admin View for Ethnicity'''
+    """Admin View for Ethnicity"""
 
     list_display = (
         'id',
