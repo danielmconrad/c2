@@ -63,7 +63,7 @@ invoke --list
 # Create migrations
 docker-compose run web python manage.py makemigrations
 
-# Save data as fixtures
+# Save a single app's model as fixtures
 docker-compose run web python manage.py dumpdata APP.MODEL > web/APP/fixtures/MODEL.json
 
 # Run Migrations
