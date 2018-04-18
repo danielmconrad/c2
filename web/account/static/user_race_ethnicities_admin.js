@@ -2,29 +2,38 @@ var raceEthnicityRowSelector = '.user-race-ethnicity-inline .form-row';
 var inputsSelector = 'select';
 
 (function($) {
+  // Sets the current and change behavior for a row
+  var defineRowBehavior = function(rowElem) {
+    var fields = $(rowElem).find(inputsSelector);
 
-  // Disable any other field in a row if one of the fields is populated
-  var defineRowBehavior = function($row) {
-    var fields = $row.find(inputsSelector);
+    fields
+      .on('change', function() { disableSiblings(fields, this) })
+      .filter((i, elem) => $(elem).val())
+      .each((i, elem) => disableSiblings(fields, elem));
+  };
 
-    fields.on('change', function() {
-      var hasValue = !!$(this).val();
-      fields.not(this).prop('disabled', hasValue).addClass('disabled', hasValue);
-    });
+  // jQuery function that find sibling fields and disables them
+  var disableSiblings = function(fields, fieldElem) {
+    debugger;
+
+    var hasValue = !!$(fieldElem).val();
+    fields
+      .not(fieldElem)
+      .prop('disabled', hasValue)
+      .addClass('disabled', hasValue);
   };
 
   // Make sure any dynamically added rows behave the same way
   $(document).on('formset:added', function(event, $row, formsetName) {
     if (formsetName == 'userraceethnicity_set') {
-      defineRowBehavior($row);
+      $row.find(inputsSelector).on('change', disableSiblings);
     }
   });
 
   // Find any rows already on the page
-  $(function(){
-    $(raceEthnicityRowSelector).each(function() {
-      defineRowBehavior($(this));
-    });
+  $(function() {
+    $(raceEthnicityRowSelector)
+      .each((i, rowElem) => defineRowBehavior(rowElem));
   });
 
 })(window.jQuery || django.jQuery);
