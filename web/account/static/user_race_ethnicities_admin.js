@@ -14,8 +14,6 @@ var inputsSelector = 'select';
 
   // jQuery function that find sibling fields and disables them
   var disableSiblings = function(fields, fieldElem) {
-    debugger;
-
     var hasValue = !!$(fieldElem).val();
     fields
       .not(fieldElem)
