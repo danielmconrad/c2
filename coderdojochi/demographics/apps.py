@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class DemograhicsConfig(AppConfig):
+class DemograhicsAppConfig(AppConfig):
     name = 'demographics'
