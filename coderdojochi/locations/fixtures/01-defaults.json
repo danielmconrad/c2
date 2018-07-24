@@ -1060,7 +1060,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 1,
   "fields": {
     "address": 1,
@@ -1068,7 +1068,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 2,
   "fields": {
     "address": 2,
@@ -1076,7 +1076,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 3,
   "fields": {
     "address": 3,
@@ -1084,7 +1084,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 4,
   "fields": {
     "address": 4,
@@ -1092,7 +1092,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 5,
   "fields": {
     "address": 5,
@@ -1100,7 +1100,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 6,
   "fields": {
     "address": 6,
@@ -1108,7 +1108,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 7,
   "fields": {
     "address": 7,
@@ -1116,7 +1116,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 8,
   "fields": {
     "address": 8,
@@ -1124,7 +1124,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 9,
   "fields": {
     "address": 9,
@@ -1132,7 +1132,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 10,
   "fields": {
     "address": 10,
@@ -1140,7 +1140,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 11,
   "fields": {
     "address": 11,
@@ -1148,7 +1148,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 12,
   "fields": {
     "address": 12,
@@ -1156,7 +1156,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 13,
   "fields": {
     "address": 13,
@@ -1164,7 +1164,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 14,
   "fields": {
     "address": 14,
@@ -1172,7 +1172,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 15,
   "fields": {
     "address": 15,
@@ -1180,7 +1180,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 16,
   "fields": {
     "address": 16,
@@ -1188,7 +1188,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 17,
   "fields": {
     "address": 17,
@@ -1196,7 +1196,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 18,
   "fields": {
     "address": 18,
@@ -1204,7 +1204,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 19,
   "fields": {
     "address": 19,
@@ -1212,7 +1212,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 20,
   "fields": {
     "address": 20,
@@ -1220,7 +1220,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 21,
   "fields": {
     "address": 21,
@@ -1228,7 +1228,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 22,
   "fields": {
     "address": 22,
@@ -1236,7 +1236,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 23,
   "fields": {
     "address": 23,
@@ -1244,7 +1244,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 24,
   "fields": {
     "address": 24,
@@ -1252,7 +1252,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 25,
   "fields": {
     "address": 25,
@@ -1260,7 +1260,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 26,
   "fields": {
     "address": 26,
@@ -1268,7 +1268,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 27,
   "fields": {
     "address": 27,
@@ -1276,7 +1276,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 28,
   "fields": {
     "address": 28,
@@ -1284,7 +1284,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 29,
   "fields": {
     "address": 29,
@@ -1292,7 +1292,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 30,
   "fields": {
     "address": 30,
@@ -1300,7 +1300,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 31,
   "fields": {
     "address": 31,
@@ -1308,7 +1308,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 32,
   "fields": {
     "address": 32,
@@ -1316,7 +1316,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 33,
   "fields": {
     "address": 33,
@@ -1324,7 +1324,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 34,
   "fields": {
     "address": 34,
@@ -1332,7 +1332,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 35,
   "fields": {
     "address": 35,
@@ -1340,7 +1340,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 36,
   "fields": {
     "address": 36,
@@ -1348,7 +1348,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 37,
   "fields": {
     "address": 37,
@@ -1356,7 +1356,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 38,
   "fields": {
     "address": 38,
@@ -1364,7 +1364,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 39,
   "fields": {
     "address": 39,
@@ -1372,7 +1372,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 40,
   "fields": {
     "address": 40,
@@ -1380,7 +1380,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 41,
   "fields": {
     "address": 41,
@@ -1388,7 +1388,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 42,
   "fields": {
     "address": 42,
@@ -1396,7 +1396,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 43,
   "fields": {
     "address": 43,
@@ -1404,7 +1404,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 44,
   "fields": {
     "address": 44,
@@ -1412,7 +1412,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 45,
   "fields": {
     "address": 45,
@@ -1420,7 +1420,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 46,
   "fields": {
     "address": 46,
@@ -1428,7 +1428,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 47,
   "fields": {
     "address": 47,
@@ -1436,7 +1436,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 48,
   "fields": {
     "address": 48,
@@ -1444,7 +1444,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 49,
   "fields": {
     "address": 49,
@@ -1452,7 +1452,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 50,
   "fields": {
     "address": 50,
@@ -1460,7 +1460,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 51,
   "fields": {
     "address": 51,
@@ -1468,7 +1468,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 52,
   "fields": {
     "address": 52,
@@ -1476,7 +1476,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 53,
   "fields": {
     "address": 53,
@@ -1484,7 +1484,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 54,
   "fields": {
     "address": 54,
@@ -1492,7 +1492,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 55,
   "fields": {
     "address": 55,
@@ -1500,7 +1500,7 @@
   }
 },
 {
-  "model": "location.location",
+  "model": "locations.location",
   "pk": 56,
   "fields": {
     "address": 56,
@@ -1508,7 +1508,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 1,
   "fields": {
     "name": "Academy For Global Citizenship",
@@ -1519,7 +1519,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 2,
   "fields": {
     "name": "Annunciata School",
@@ -1530,7 +1530,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 3,
   "fields": {
     "name": "Ariel Elementary Community Academy",
@@ -1541,7 +1541,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 4,
   "fields": {
     "name": "Beaubien Elementary School",
@@ -1552,7 +1552,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 5,
   "fields": {
     "name": "Bell Elementary School",
@@ -1563,7 +1563,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 6,
   "fields": {
     "name": "Brennemann Elementary School",
@@ -1574,7 +1574,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 7,
   "fields": {
     "name": "Burr Elementary School",
@@ -1585,7 +1585,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 8,
   "fields": {
     "name": "Chicago Grammar School",
@@ -1596,7 +1596,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 9,
   "fields": {
     "name": "Chicago Math & Sci Elementary Charter",
@@ -1607,7 +1607,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 10,
   "fields": {
     "name": "CICS Avalon",
@@ -1618,7 +1618,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 11,
   "fields": {
     "name": "CICS Basil",
@@ -1629,7 +1629,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 12,
   "fields": {
     "name": "CICS Bucktown",
@@ -1640,7 +1640,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 13,
   "fields": {
     "name": "CICS ChicagoQuest",
@@ -1651,7 +1651,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 14,
   "fields": {
     "name": "CICS Irving Park",
@@ -1662,7 +1662,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 15,
   "fields": {
     "name": "CICS Larry Hawkins",
@@ -1673,7 +1673,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 16,
   "fields": {
     "name": "CICS Lloyd Bond",
@@ -1684,7 +1684,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 17,
   "fields": {
     "name": "CICS Longwood",
@@ -1695,7 +1695,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 18,
   "fields": {
     "name": "CICS Loomis",
@@ -1706,7 +1706,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 19,
   "fields": {
     "name": "CICS Northtown",
@@ -1717,7 +1717,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 20,
   "fields": {
     "name": "CICS Prairie",
@@ -1728,7 +1728,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 21,
   "fields": {
     "name": "CICS Ralph Ellison",
@@ -1739,7 +1739,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 22,
   "fields": {
     "name": "CICS Washington Park",
@@ -1750,7 +1750,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 23,
   "fields": {
     "name": "CICS West Belden",
@@ -1761,7 +1761,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 24,
   "fields": {
     "name": "CICS Wrightwood",
@@ -1772,7 +1772,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 25,
   "fields": {
     "name": "Disney II Elementary School",
@@ -1783,7 +1783,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 26,
   "fields": {
     "name": "Disney II Magnet High School",
@@ -1794,7 +1794,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 27,
   "fields": {
     "name": "GCE Lab School",
@@ -1805,7 +1805,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 28,
   "fields": {
     "name": "Goethe Elementary School",
@@ -1816,7 +1816,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 29,
   "fields": {
     "name": "Hawthorne Elementary Scholastic Academy",
@@ -1827,7 +1827,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 30,
   "fields": {
     "name": "Horizon Science Academy-Belmont",
@@ -1838,7 +1838,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 31,
   "fields": {
     "name": "Horizon Science Academy-Mckinley Park",
@@ -1849,7 +1849,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 32,
   "fields": {
     "name": "Jackson A Elementary Language Academy",
@@ -1860,7 +1860,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 33,
   "fields": {
     "name": "Kellogg Elementary School",
@@ -1871,7 +1871,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 34,
   "fields": {
     "name": "Lane Technical High School",
@@ -1882,7 +1882,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 35,
   "fields": {
     "name": "Linne Elementary School",
@@ -1893,7 +1893,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 36,
   "fields": {
     "name": "McPherson Elementary School",
@@ -1904,7 +1904,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 37,
   "fields": {
     "name": "Muchin College Prep",
@@ -1915,7 +1915,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 38,
   "fields": {
     "name": "Prescott Elementary School",
@@ -1926,7 +1926,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 39,
   "fields": {
     "name": "Pritzker College Prep",
@@ -1937,7 +1937,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 40,
   "fields": {
     "name": "Pritzker Elementary School",
@@ -1948,7 +1948,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 41,
   "fields": {
     "name": "Reinberg Elementary School",
@@ -1959,7 +1959,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 42,
   "fields": {
     "name": "Roosevelt Elementary School",
@@ -1970,7 +1970,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 43,
   "fields": {
     "name": "Roosevelt High School",
@@ -1981,7 +1981,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 44,
   "fields": {
     "name": "Rowe Elementary School",
@@ -1992,7 +1992,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 45,
   "fields": {
     "name": "Rowe-Clark Math & Science Academy",
@@ -2003,7 +2003,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 46,
   "fields": {
     "name": "Skinner Elementary School",
@@ -2014,7 +2014,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 47,
   "fields": {
     "name": "Skinner North Elementary School",
@@ -2025,7 +2025,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 48,
   "fields": {
     "name": "South Loop Elementary School",
@@ -2036,7 +2036,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 49,
   "fields": {
     "name": "St Benedict Elementary School",
@@ -2047,7 +2047,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 50,
   "fields": {
     "name": "St Benedict Preparatory School",
@@ -2058,7 +2058,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 51,
   "fields": {
     "name": "St Therese School",
@@ -2069,7 +2069,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 52,
   "fields": {
     "name": "Walt Disney Magnet School",
@@ -2080,7 +2080,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 53,
   "fields": {
     "name": "Whitney Elementary School",
@@ -2091,7 +2091,7 @@
   }
 },
 {
-  "model": "location.school",
+  "model": "locations.school",
   "pk": 54,
   "fields": {
     "name": "Wildwood Elementary School",

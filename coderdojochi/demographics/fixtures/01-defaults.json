@@ -1,0 +1,370 @@
+[
+  {
+    "model": "demographics.gender",
+    "pk": 1,
+    "fields": {
+      "gender": "Female",
+      "referred_to_as": "F"
+    }
+  },
+  {
+    "model": "demographics.gender",
+    "pk": 2,
+    "fields": {
+      "gender": "Male",
+      "referred_to_as": "M"
+    }
+  },
+  {
+    "model": "demographics.gender",
+    "pk": 3,
+    "fields": {
+      "gender": "Other",
+      "referred_to_as": "O"
+    }
+  },
+  {
+    "model": "demographics.race",
+    "pk": 1,
+    "fields": {
+      "race": "White"
+    }
+  },
+  {
+    "model": "demographics.race",
+    "pk": 2,
+    "fields": {
+      "race": "Hispanic, Latino, or Spanish"
+    }
+  },
+  {
+    "model": "demographics.race",
+    "pk": 3,
+    "fields": {
+      "race": "Black or African American"
+    }
+  },
+  {
+    "model": "demographics.race",
+    "pk": 4,
+    "fields": {
+      "race": "Asian"
+    }
+  },
+  {
+    "model": "demographics.race",
+    "pk": 5,
+    "fields": {
+      "race": "American Indian or Alaska Native"
+    }
+  },
+  {
+    "model": "demographics.race",
+    "pk": 6,
+    "fields": {
+      "race": "Middle Eastern or North African"
+    }
+  },
+  {
+    "model": "demographics.race",
+    "pk": 7,
+    "fields": {
+      "race": "Native Hawaiian or Other Pacific Islander"
+    }
+  },
+  {
+    "model": "demographics.race",
+    "pk": 8,
+    "fields": {
+      "race": "Some Other Race or Ethnicity"
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 1,
+    "fields": {
+      "ethnicity": "German",
+      "race": 1
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 2,
+    "fields": {
+      "ethnicity": "Irish",
+      "race": 1
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 3,
+    "fields": {
+      "ethnicity": "English",
+      "race": 1
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 4,
+    "fields": {
+      "ethnicity": "Italian",
+      "race": 1
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 5,
+    "fields": {
+      "ethnicity": "Polish",
+      "race": 1
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 6,
+    "fields": {
+      "ethnicity": "French",
+      "race": 1
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 7,
+    "fields": {
+      "ethnicity": "Mexican or Mexican American",
+      "race": 2
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 8,
+    "fields": {
+      "ethnicity": "Puerto Rican",
+      "race": 2
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 9,
+    "fields": {
+      "ethnicity": "Cuban",
+      "race": 2
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 10,
+    "fields": {
+      "ethnicity": "Salvadoran",
+      "race": 2
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 11,
+    "fields": {
+      "ethnicity": "Dominican",
+      "race": 2
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 12,
+    "fields": {
+      "ethnicity": "Colombian",
+      "race": 2
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 13,
+    "fields": {
+      "ethnicity": "African American",
+      "race": 3
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 14,
+    "fields": {
+      "ethnicity": "Jamaican",
+      "race": 3
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 15,
+    "fields": {
+      "ethnicity": "Haitian",
+      "race": 3
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 16,
+    "fields": {
+      "ethnicity": "Nigerian",
+      "race": 3
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 17,
+    "fields": {
+      "ethnicity": "Ethiopian",
+      "race": 3
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 18,
+    "fields": {
+      "ethnicity": "Somali",
+      "race": 3
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 19,
+    "fields": {
+      "ethnicity": "Chinese",
+      "race": 4
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 20,
+    "fields": {
+      "ethnicity": "Filipino",
+      "race": 4
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 21,
+    "fields": {
+      "ethnicity": "Asian Indian",
+      "race": 4
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 22,
+    "fields": {
+      "ethnicity": "Vietnamese",
+      "race": 4
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 23,
+    "fields": {
+      "ethnicity": "Korean",
+      "race": 4
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 24,
+    "fields": {
+      "ethnicity": "Japanese",
+      "race": 4
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 25,
+    "fields": {
+      "ethnicity": "Lebanese",
+      "race": 6
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 26,
+    "fields": {
+      "ethnicity": "Iranian",
+      "race": 6
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 27,
+    "fields": {
+      "ethnicity": "Egyptian",
+      "race": 6
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 28,
+    "fields": {
+      "ethnicity": "Syrian",
+      "race": 6
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 29,
+    "fields": {
+      "ethnicity": "Moroccan",
+      "race": 6
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 30,
+    "fields": {
+      "ethnicity": "Israeli",
+      "race": 6
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 31,
+    "fields": {
+      "ethnicity": "Native Hawaiian",
+      "race": 7
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 32,
+    "fields": {
+      "ethnicity": "Samoan",
+      "race": 7
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 33,
+    "fields": {
+      "ethnicity": "Charmorro",
+      "race": 7
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 34,
+    "fields": {
+      "ethnicity": "Tongan",
+      "race": 7
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 35,
+    "fields": {
+      "ethnicity": "Fijian",
+      "race": 7
+    }
+  },
+  {
+    "model": "demographics.ethnicity",
+    "pk": 36,
+    "fields": {
+      "ethnicity": "Marshallese",
+      "race": 7
+    }
+  }
+]

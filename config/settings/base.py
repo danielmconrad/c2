@@ -67,13 +67,17 @@ THIRD_PARTY_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'rest_framework',
+    # Your stuff: custom third-party apps go here
     'address',
     'phonenumber_field',
+    'django_admin_listfilter_dropdown',
+    'termsandconditions',
 ]
 LOCAL_APPS = [
     'coderdojochi.users.apps.UsersAppConfig',
     # Your stuff: custom apps go here
-    'coderdojochi.location',
+    'coderdojochi.locations',
+    'coderdojochi.demographics',
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -238,6 +242,7 @@ CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 # http://docs.celeryproject.org/en/latest/userguide/configuration.html#std:setting-result_serializer
 CELERY_RESULT_SERIALIZER = 'json'
+
 # django-allauth
 # ------------------------------------------------------------------------------
 ACCOUNT_ALLOW_REGISTRATION = env.bool('DJANGO_ACCOUNT_ALLOW_REGISTRATION', True)
@@ -257,8 +262,7 @@ SOCIALACCOUNT_ADAPTER = 'coderdojochi.users.adapters.SocialAccountAdapter'
 # https://django-compressor.readthedocs.io/en/latest/quickstart/#installation
 INSTALLED_APPS += ['compressor']
 STATICFILES_FINDERS += ['compressor.finders.CompressorFinder']
-# Your stuff...
-# ------------------------------------------------------------------------------
 
 # django-address
+# ------------------------------------------------------------------------------
 GOOGLE_API_KEY = env('GOOGLE_API_KEY')
